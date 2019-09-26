@@ -1,0 +1,8 @@
+## Reduce image size using imagemagick for batch of images
+mogrify -path imagepath  -strip -quality 50% *.jpg
+
+## Create Photo Montage with ImageMagick
+montage -geometry +12+12 -tile 4x4 2008*.jpg montage.jpg
+
+### With title and polaroid effect
+montage 2008*.jpg -thumbnail 300x300 -set caption %t -bordercolor #E6E6FA  -background grey40 -pointsize 9 -density 144x144 +polaroid -resize 50%  -background white -geometry +1+1 -tile 4x4 -title "Las Vegas Travel 2008" polaroid_t.jpg
