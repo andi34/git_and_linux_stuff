@@ -10,6 +10,8 @@ sudo apt-get update && sudo apt-get install -y yarn
 wget https://raw.githubusercontent.com/gonzalo/gphoto2-updater/master/gphoto2-updater.sh && sudo bash gphoto2-updater.sh
 
 
+sudo chown -R www-data:www-data /var/www/
+
 
 cd /var/www/
 sudo -u www-data -s
