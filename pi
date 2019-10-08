@@ -40,3 +40,6 @@ cp config/config.inc.php config/my.config.inc.php
 yarn install
 yarn build
 exit
+
+# Give sudo rights to the webserver - SECURITY ISSUE - NEEDS TO BE FIXED
+sudo echo "www-data ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
