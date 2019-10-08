@@ -59,8 +59,3 @@ yarn install
 yarn build
 exit
 ```
-### Give sudo rights to the webserver - SECURITY ISSUE - NEEDS TO BE FIXED
-`sudo nano /etc/sudoers`
-
-Add the following:
-`www-data ALL=(ALL) NOPASSWD: ALL`
