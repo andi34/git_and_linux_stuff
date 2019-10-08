@@ -31,7 +31,7 @@ sudo chown -R www-data:www-data /var/www/
 
 ### Give our webserver user access to the usb device
 ```
-echo SUBSYSTEM=="usb", ATTRS{idVendor}=="04b0", ATTRS{idProduct}=="0424", OWNER="www-data" | sudo tee /etc/udev/rules.d/50-usb-camera.rules
+sudo gpasswd -a www-data plugdev
 ```
 
 ### Remove execution permission on gphoto2 Volume Monitor
