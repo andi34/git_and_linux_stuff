@@ -50,6 +50,7 @@ reboot
 ```
 
 ### Get the source and build it
+**Please note:** depending on your hardware `yarn build` takes up to 15min
 ```
 cd /var/www/
 sudo -u www-data -s
