@@ -1,4 +1,4 @@
-# Photobooth setup
+# Photobooth setup on Raspbian Buster
 ### Install needed packages
 ```
 sudo apt-get update
@@ -32,6 +32,11 @@ sudo chown -R www-data:www-data /var/www/
 ### Give our webserver user access to the usb device
 ```
 sudo gpasswd -a www-data plugdev
+```
+
+### If you like to use the printer you also have to add your webserver user to the ld group:
+```
+sudo gpasswd -a www-data lp
 ```
 
 ### Remove execution permission on gphoto2 Volume Monitor
