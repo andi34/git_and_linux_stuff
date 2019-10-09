@@ -34,7 +34,7 @@ sudo chown -R www-data:www-data /var/www/
 sudo gpasswd -a www-data plugdev
 ```
 
-### If you like to use the printer you also have to add your webserver user to the ld group:
+### If you like to use the printer you also have to add your webserver user to the `lp` group:
 ```
 sudo gpasswd -a www-data lp
 ```
