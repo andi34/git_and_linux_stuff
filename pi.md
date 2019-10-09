@@ -48,7 +48,7 @@ reboot
 ```
 cd /var/www/
 sudo -u www-data -s
-rm -r html/
+rm -rf html/
 git clone https://github.com/andi34/photobooth html
 cd /var/www/html
 git fetch origin
