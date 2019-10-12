@@ -60,7 +60,6 @@ cd /var/www/html
 git fetch origin
 git checkout origin/master
 git submodule update --init
-cp config/config.inc.php config/my.config.inc.php
 yarn install
 yarn build
 exit
